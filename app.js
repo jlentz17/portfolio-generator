@@ -61,7 +61,10 @@ Add a New Project
   ]);
 };
 
-promptUser().then(answers => console.log(answers));
+promptUser().
+then(answers => console.log(answers))
+.then(promptProject)
+.then(projectAnswers => console.log(projectAnswers));
 // const fs = require("fs");
 
 // const generatePage = require("./src/page-template");
